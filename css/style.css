@@ -1,0 +1,55 @@
+.container {
+
+	background-color: #130f40;
+
+}
+
+.jumbotron {
+
+
+	background: url(../img/top.png) no-repeat;
+	background-size: cover;
+
+}
+
+.atur-nav {
+
+	margin-left: 25%;
+
+}
+
+.atur-nav li {
+
+	margin-left: 30px;
+	margin-right: 30px;
+
+}
+
+.atur-nav a {
+
+	font-size: 18px;
+
+}
+
+.content-profile {
+
+	width: 910px;
+	margin-left: 25px;
+	padding: 50px;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.logo-home img {
+
+	width: 70px;
+	height: 70px;
+	margin-left: 40%;
+
+}
+
+.content-profile p {
+
+	text-align: justify;
+	color: #000;
+
+}

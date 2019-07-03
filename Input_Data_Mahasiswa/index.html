@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<title>Input Data Mahasiswa</title>
+	<link rel="stylesheet" type="text/css" href="../Bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg">
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto atur-nav">
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDrop">
+		        	<a class="dropdown-item" href="#">Sejarah</a>
+		        	<a class="dropdown-item" href="#">Kampuas</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Visi Misi</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Education
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Program Studi</a>
+		          <a class="dropdown-item" href="#">Input Data Mahasiswa</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../Input_Nilai/index.html">Input Nilai</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		      	<a class="nav-link" href="#">Gallery</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		<div class="title-InputMahasiswa">
+			<h1>Input Data Mahasiswa</h1>
+		</div>
+		<div class="back">
+			<div class="box-Input">
+				<form action="" name="formLeft">
+			        <div class="container">
+			            <!-- Awal Form Samping Kiri -->
+			            <div class="row">
+			                <div class="col-sm-10" style="margin-top: 50px">
+			                    <form>
+			                        <div class="row form-group">
+			                            <label class="col-sm-4 col-form-label">NIM</label>
+			                            <div class="col-sm-7 ">
+			                                <input type="text" class="form-control" name="NIM">
+			                            </div>
+			                        </div>
+			                        <div class="row form-group">
+			                            <label  class="col-sm-4 col-form-label">Nama Mahasiswa</label>
+			                            <div class="col-sm-7">
+			                                <input type="text" class="form-control" name="NamaMahasiswa">
+			                            </div>
+			                        </div>
+			                        <div class="row form-group">
+			                            <label  class="col-sm-4 col-form-label">Jurusan</label>
+			                            <div class="col-sm-7">
+			                                <select class="form-control"name="PilihJurusan">
+			                                    <option value="">- Jurusan Anda -</option>
+			                                    <option value="Informatika Komputer">Informatika Komputer</option>
+			                                    <option value="Teknik Informatika">Teknik Informatika</option>
+			                                    <option value="Akutansi Perkantoran">Akutansi Perkantoran</option>
+			                                    <option value="Administrasi Bisnis Internasional">Administrasi Bisnis Internasional</option>
+			                                    <option value="Komputer Akutansi">Komputer Akutansi</option>
+			                                </select>
+			                            </div>
+			                        </div>
+			                        <div class="row form-group">
+			                            <label  class="col-sm-4 col-form-label">Jenis Kelamin</label>
+			                            <div class="col-sm-3">
+			                                <div class="form-check">
+			                                <input class="form-check-input" type="radio" name="LakiLaki" value="Laki-Laki">
+			                                <label class="form-check-label" for="exampleRadios1">
+			                                    Laki-Laki
+			                                </label>
+			                                </div>
+			                            </div>
+			                            <div class="col-sm-4">
+			                                <div class="form-check">
+			                                <input class="form-check-input" type="radio" name="Perempuan"  value="Perempuan">
+			                                <label class="form-check-label" for="exampleRadios1">
+			                                    Perempuan
+			                                </label>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div class="row form-group">
+			                            <label  class="col-sm-4 col-form-label">Tempat Lahir</label>
+			                            <div class="col-sm-7">
+			                                <input type="text" class="form-control" name="TempatLahir">
+			                            </div>
+			                        </div>
+			                        <div class="row form-group">
+			                            <label  class="col-sm-4 col-form-label">Tanggal Lahir</label>
+			                            <div class="col-sm-auto">
+			                            <select class="form-control" name="PilihDate">
+			                                <option value="">Hari</option>
+			                                <script type="text/javascript">
+			                                        var Tanggal = new Array(31);
+			                                        for (var i = 0; i < Tanggal.length; i++){
+			                                            Tanggal[i] = i + 1;
+			                                            document.write("<option>" + Tanggal[i] + "</option>");
+			                                        }
+			                                    </script>
+			                            </select> 
+			                            </div>
+			                            <div class="col-sm-auto">
+			                            <select class="form-control" name="PilihMonth">
+			                                <option value="">Bulan</option>
+			                                <script type="text/javascript">
+			                                    
+			                                        var Bulan = ['Januari', 'Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+			                                        for (var i = 0; i < Bulan.length; i++){
+			                                            document.write("<option>" + Bulan[i] + "</option>");
+			                                        }
+			                                    </script>
+			                            </select> 
+			                            </div>
+			                            <div class="col-sm-auto">
+			                            <select class="form-control" name="PilihYear">
+			                                <option value="">Tahun</option>
+			                                <script type="text/javascript">
+			                                        var Tahun = new Array(50);
+			                                        for (var i = 0; i < Tahun.length; i++){
+			                                            Tahun[i] = 1970 + i;
+			                                            document.write("<option>" + Tahun[i] + "</option>");
+			                                        }
+			                                    </script>
+			                            </select> 
+			                            </div>
+			                        </div>
+			                        <div class="row form-group">
+			                            <label for="exampleFormControlTextarea1" class="col-sm-4">Alamat</label>
+			                            <div class="col-sm-7">
+			                                <textarea class="form-control" name="Alamat" rows="3"></textarea>
+			                            </div>
+			                        </div>
+			                        <div class="row form-group">
+			                            <label for="staticNumber" class="col-sm-4 col-form-label">No Telp</label>
+			                            <div class="col-sm-7">
+			                                <input type="text/number" class="form-control" name="NoTelp">
+			                            </div>
+			                        </div>
+			                        <div class="row form-group">
+			                            <label for="staticEmail" class="col-sm-4 col-form-label">Email</label>
+			                            <div class="col-sm-7">
+			                                <input type="email" class="form-control" name="Email">
+			                            </div>
+			                        </div>
+			                    </form>
+			                </div>
+			            </div>
+			            <br><br>
+			            <!--   Akhir Form Samping Kanan -->
+
+			            <div class="row" style="margin-bottom:50px">
+			                <div class="col-auto">
+			                    <button type="button" class="btn btn-warning" onclick="Proses()">Proses</button>
+			                    <button type="reset" class="btn btn-primary" onclick="hapus()">Reset</button>
+			                </div>
+			            </div>
+			        </div>
+				</form>
+			</div>
+		</div>
+
+			<!-- Output -->
+
+		<div class="title-Output">
+			<h1>Output</h1>
+		</div>
+		<div class="back">
+			<div class="box-Output">
+				<form name="formRight">
+                    <div class="row form-group">
+                        <label class="col-sm-4 col-form-label">NIM</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="ONIM">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label  class="col-sm-4 col-form-label">Nama Mahasiswa</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="ONamaMahasiswa">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-sm-4 col-form-label">Jurusan</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="OJurusan">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label  class="col-sm-4 col-form-label">Jenis Kelamin</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="OJenisKelamin">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label  class="col-sm-4 col-form-label">Tempat Lahir</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="OTempatLahir">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label  class="col-sm-4 col-form-label">Tanggal Lahir</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" name="OTanggalLahir">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="exampleFormControlTextarea1" class="col-sm-4">Alamat</label>
+                        <div class="col-sm-7">
+                            <textarea class="form-control" name="OAlamat"  rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="staticNumber" class="col-sm-4 col-form-label">No Telp</label>
+                        <div class="col-sm-7">
+                            <input type="text/number" class="form-control" name="ONoTelp">
+                        </div>
+                    </div>
+                     <div class="row form-group">
+                         <label for="staticEmail" class="col-sm-4 col-form-label">Email</label>
+                         <div class="col-sm-7">
+                             <input type="email" class="form-control" name="OEmail">
+                         </div>
+                     </div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<script type="text/javascript" src="../Bootstrap/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../Bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

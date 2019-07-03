@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<title>Input Data Mahasiswa</title>
+	<link rel="stylesheet" type="text/css" href="../Bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg">
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto atur-nav">
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDrop">
+		        	<a class="dropdown-item" href="#">Sejarah</a>
+		        	<a class="dropdown-item" href="#">Kampuas</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Visi Misi</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Education
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Program Studi</a>
+		          <a class="dropdown-item" href="../Input_Data_Mahasiswa/index.html">Input Data Mahasiswa</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Input Nilai</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		      	<a class="nav-link" href="#">Gallery</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		<div class="title-InputNilai">
+			<h1>Input Nilai Mahasiswa</h1>
+		</div>
+		<div class="back">
+			<div class="box-Input">
+				<form action="" method="" name="Form">
+	                <div class="row form-group">
+	                    <div class="col-sm-6">
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>NIM</label>
+	                            </div>
+	                            <div class="col">
+	                                <select name="NIM" class="form-control NIM" onchange="pilihanNIM()">
+	                                    <option value="">-- NIM --</option>
+	                                    <option value="180441020111">180441020111</option>
+	                                    <option value="180441020112">180441020112</option>
+	                                    <option value="180441020113">180441020113</option>
+	                                    <option value="180441020114">180441020114</option>
+	                                    <option value="180441020115">180441020115</option>
+	                                    <option value="180441020116">180441020116</option>
+	                                    <option value="180441020117">180441020117</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>Nama Mahasiswa</label>
+	                            </div>
+	                            <div class="col">
+	                                <input type="text" class="form-control" name="NamaMahasiswa">
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>Kelas</label>
+	                            </div>
+	                            <div class="col">
+	                                <input type="text" class="form-control" name="Kelas">
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                Mata Kuliah
+	                            </div>
+	                            <div class="col">
+	                                <select name="MataKuliah" class="form-control">
+	                                    <option value="">-- Mata Kuliah --</option>
+	                                    <option value="B.Inggris">B.Inggris</option>
+	                                    <option value="Akutansi">Akutansi</option>
+	                                    <option value="Mentoring Agama">Mentoring Agama</option>
+	                                    <option value="Komputer Jaringan">Komputer Jaringan</option>
+	                                    <option value="Web Design">Web Design</option>
+	                                    <option value="Kewirausahaan">Kewirausahaan</option>
+	                                    <option value="Algoritma Java">Algoritma Java</option>
+	                                    <option value="Database">Database</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="row form-group" style="margin-top : 50px;">
+	                            <div class="col">
+	                                <p>Nilai :</p>
+	                            </div>
+	                        </div>
+	                        <div class="row text-center">
+	                            <div class="col-sm-2">
+	                                <p>Tugas 30%</p>
+	                            </div>
+	                            <div class="col-sm-2">
+	                                <p>Formatif 10%</p>
+	                            </div>
+	                            <div class="col-sm-2">
+	                                <p>UTS 25%</p>
+	                            </div>
+	                            <div class="col-sm-2">
+	                                <p>UAS 35%</p>
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col-sm-3">
+	                                <input type="text" class="form-control" name="Tugas">
+	                            </div>
+	                            <div class="col-sm-3">
+	                                <input type="text" class="form-control" name="Formatif">
+	                            </div>
+	                            <div class="col-sm-3">
+	                                <input type="text" class="form-control" name="UTS">
+	                            </div>
+	                            <div class="col-sm-3">
+	                                <input type="text" class="form-control" name="UAS">
+	                            </div>  
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col-sm-6"></div>
+	                            <div class="col-sm-3">
+	                                <label>Total Nilai</label>
+	                            </div>
+	                            <div class="col-sm-3">
+	                                <input type="text" class="form-control" name="TotalNilai">
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col-auto">
+	                                <button type="button" class="btn btn-warning" onclick="Proses()">Proses</button>
+	                                <button type="reset" class="btn btn-primary">Reset</button>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="line"></div>
+	                    <div class="col-sm-5">
+	                        <div class="row">
+	                            <div class="col" style="margin-bottom: 50px;">
+	                                <h5 style="font-size: 50px;">Output</h5>
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>NIM</label>
+	                            </div>
+	                            <div class="col">
+	                                <input type="text" class="form-control" name="ONIM">
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>Nama Mahasiswa</label>
+	                            </div>
+	                            <div class="col">
+	                                <input type="text" class="form-control" name="ONamaMahasiswa">
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>Kelas</label>
+	                            </div>
+	                            <div class="col">
+	                                <input type="text" class="form-control" name="OKelas">
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>Mata Kuliah</label>
+	                            </div>
+	                            <div class="col">
+	                                <input type="text" class="form-control" name="OMataKuliah">
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>Nilai Akhir</label>
+	                            </div>
+	                            <div class="col">
+	                                <input type="text" class="form-control" name="NilaiAkhir">
+	                            </div>
+	                        </div>
+	                        <div class="row form-group">
+	                            <div class="col">
+	                                <label>Grade</label>
+	                            </div>
+	                            <div class="col">
+	                                <input type="text" class="form-control" name="Grade">
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </form>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../Bootstrap/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../Bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
